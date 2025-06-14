@@ -1,0 +1,61 @@
+.jugadores-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.jugador-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 12px;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.jugador-card:hover {
+  transform: scale(1.02);
+}
+
+.jugador-card img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.jugador-card h2 {
+  font-size: 1rem;
+  margin: 10px 0 6px;
+  color: #333;
+}
+
+.jugador-card p {
+  margin: 4px 0;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Responsividad mejorada para pantallas pequeñas */
+@media (max-width: 500px) {
+  .jugador-card {
+    padding: 10px;
+  }
+
+  .jugador-card h2 {
+    font-size: 0.95rem;
+  }
+
+  .jugador-card p {
+    font-size: 0.8rem;
+  }
+}
