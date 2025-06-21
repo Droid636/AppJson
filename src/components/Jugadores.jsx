@@ -7,7 +7,7 @@ const Jugadores = () => {
     <div className="jugadores-container">
       {jugadores.map((jugador) => (
         <div className="jugador-card" key={jugador.index}>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1200px-Bandera_de_Espa%C3%B1a.svg.png" alt={jugador.nombreJugador} />
+          <img  src={jugador.fotoJugador} />
           <h2>{jugador.nombreJugador}</h2>
           <p><strong>Nacionalidad:</strong> {jugador.nacionalidades.nacionalidad} / {jugador.nacionalidades.nacionalidad2}</p>
           <p><strong>Edad:</strong> {jugador.edad}</p>
